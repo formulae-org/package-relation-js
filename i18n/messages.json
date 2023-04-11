@@ -1,0 +1,66 @@
+{
+	"pathRelation" : "Relation",
+
+	"nameEquals"     : "Relational equality",
+	"operatorEquals" : "=",
+	"leafEquals"     : "=",
+
+	"nameDifferent"     : "Relational inequality",
+	"operatorDifferent" : "≠",
+	"leafDifferent"     : "≠",
+
+	"nameGreater"     : "Relational greater",
+	"operatorGreater" : ">",
+	"leafGreater"     : ">",
+
+	"nameGreaterOrEquals"     : "Relational greater or equals",
+	"operatorGreaterOrEquals" : "≥",
+	"leafGreaterOrEquals"     : "≥",
+
+	"nameLess"     : "Relational less",
+	"operatorLess" : "<",
+	"leafLess"     : "<",
+
+	"nameLessOrEquals"     : "Relational less or equals",
+	"operatorLessOrEquals" : "≤",
+	"leafLessOrEquals"     : "≤",
+
+	"nameCompare"     : "Relational comparison",
+	"operatorCompare" : "ComparedTo",
+	"leafCompare"     : "Compared to",
+
+	"pathComparison" : "Relation.Comparison",
+
+	"nameComparisonEquals"    : "The result of a comparison as equals",
+	"literalComparisonEquals" : "Equals",
+	"leafComparisonEquals"    : "Equals",
+
+	"nameComparisonLess"    : "The result of a comparison as less",
+	"literalComparisonLess" : "Less",
+	"leafComparisonLess"    : "Less",
+
+	"nameComparisonGreater"    : "The result of a comparison as greater",
+	"literalComparisonGreater" : "Greater",
+	"leafComparisonGreater"    : "Greater",
+
+	"nameComparisonDifferent"    : "The result of a comparison as different",
+	"literalComparisonDifferent" : "Different",
+	"leafComparisonDifferent"    : "Different",
+
+	"nameMin"    : "Minimum element",
+	"literalMin" : "min",
+	"leafMin"    : "Min",
+
+	"nameMax"    : "Maximum element",
+	"literalMax" : "max",
+	"leafMax"    : "Max",
+
+	"nameIn"     : "Relational membership",
+	"operatorIn" : "∈",
+	"leafIn"     : "∈",
+
+	"nameNotIn"     : "Relational negated membership",
+	"operatorNotIn" : "∉",
+	"leafNotIn"     : "∉"
+}
+

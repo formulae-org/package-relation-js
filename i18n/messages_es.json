@@ -1,0 +1,66 @@
+{
+	"pathRelation" : "Relacional",
+
+	"nameEquals"     : "Igualdad",
+	"operatorEquals" : "=",
+	"leafEquals"     : "=",
+
+	"nameDifferent"     : "Desigualdad",
+	"operatorDifferent" : "≠",
+	"leafDifferent"     : "≠",
+
+	"nameGreater"     : "Mayor",
+	"operatorGreater" : ">",
+	"leafGreater"     : ">",
+
+	"nameGreaterOrEquals"     : "Mayor o igual",
+	"operatorGreaterOrEquals" : "≥",
+	"leafGreaterOrEquals"     : "≥",
+
+	"nameLess"     : "Menor",
+	"operatorLess" : "<",
+	"leafLess"     : "<",
+
+	"nameLessOrEquals"     : "Menor o igual",
+	"operatorLessOrEquals" : "≤",
+	"leafLessOrEquals"     : "≤",
+
+	"nameCompare"     : "Comparación",
+	"operatorCompare" : "COMPARADO CON",
+	"leafCompare"     : "Comparación",
+
+	"pathComparison" : "Relacional.Comparación",
+
+	"nameComparisonEquals"    : "Resultado de comparación igual",
+	"literalComparisonEquals" : "Igual",
+	"leafComparisonEquals"    : "Igual",
+
+	"nameComparisonLess"    : "Resultado de comparación menor",
+	"literalComparisonLess" : "Menor",
+	"leafComparisonLess"    : "Menor",
+
+	"nameComparisonGreater"    : "Resultado de comparación mayor",
+	"literalComparisonGreater" : "Mayor",
+	"leafComparisonGreater"    : "Mayor",
+
+	"nameComparisonDifferent"    : "Resultado de comparación diferent",
+	"literalComparisonDifferent" : "Diferente",
+	"leafComparisonDifferent"    : "Diferente",
+
+	"nameMin"    : "Elemento mínimo",
+	"literalMin" : "min",
+	"leafMin"    : "Mínimo",
+
+	"nameMax"    : "Elemento máximo",
+	"literalMax" : "max",
+	"leafMax"    : "Máximo",
+
+	"nameIn"     : "Pertenencia",
+	"operatorIn" : "∈",
+	"leafIn"     : "∈",
+
+	"nameNotIn"     : "Negación de pertenencia",
+	"operatorNotIn" : "∉",
+	"leafNotIn"     : "∉"
+}
+
