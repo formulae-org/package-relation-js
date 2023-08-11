@@ -245,5 +245,5 @@ Relation.setReducers = () => {
 	ReductionManager.addReducer("Relation.In",    Relation.membership);
 	ReductionManager.addReducer("Relation.NotIn", Relation.membership);
 	
-	ReductionManager.addReducer("Relation.Compare", Relation.defaultCompareReducer, false, ReductionManager.PRECEDENCE_LOW);
+	ReductionManager.addReducer("Relation.Compare", Relation.defaultCompareReducer, { precedence: ReductionManager.PRECEDENCE_LOW });
 };
