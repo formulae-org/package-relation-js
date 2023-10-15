@@ -232,18 +232,18 @@ Relation.defaultCompareReducer = (compare, session) => {
 };
 
 Relation.setReducers = () => {
-	ReductionManager.addReducer("Relation.Equals",          Relation.relationReducer);
-	ReductionManager.addReducer("Relation.Different",       Relation.relationReducer);
-	ReductionManager.addReducer("Relation.Greater",         Relation.relationReducer);
-	ReductionManager.addReducer("Relation.GreaterOrEquals", Relation.relationReducer);
-	ReductionManager.addReducer("Relation.Less",            Relation.relationReducer);
-	ReductionManager.addReducer("Relation.LessOrEquals",    Relation.relationReducer);
+	ReductionManager.addReducer("Relation.Equals",          Relation.relationReducer, "Relation.relationReducer");
+	ReductionManager.addReducer("Relation.Different",       Relation.relationReducer, "Relation.relationReducer");
+	ReductionManager.addReducer("Relation.Greater",         Relation.relationReducer, "Relation.relationReducer");
+	ReductionManager.addReducer("Relation.GreaterOrEquals", Relation.relationReducer, "Relation.relationReducer");
+	ReductionManager.addReducer("Relation.Less",            Relation.relationReducer, "Relation.relationReducer");
+	ReductionManager.addReducer("Relation.LessOrEquals",    Relation.relationReducer, "Relation.relationReducer");
 	
-	ReductionManager.addReducer("Relation.Min", Relation.mxxReducer);
-	ReductionManager.addReducer("Relation.Max", Relation.mxxReducer);
+	ReductionManager.addReducer("Relation.Min", Relation.mxxReducer, "Relation.mxxReducer");
+	ReductionManager.addReducer("Relation.Max", Relation.mxxReducer, "Relation.mxxReducer");
 	
-	ReductionManager.addReducer("Relation.In",    Relation.membership);
-	ReductionManager.addReducer("Relation.NotIn", Relation.membership);
+	ReductionManager.addReducer("Relation.In",    Relation.membership, "Relation.membership");
+	ReductionManager.addReducer("Relation.NotIn", Relation.membership, "Relation.membership");
 	
-	ReductionManager.addReducer("Relation.Compare", Relation.defaultCompareReducer, { precedence: ReductionManager.PRECEDENCE_LOW });
+	ReductionManager.addReducer("Relation.Compare", Relation.defaultCompareReducer, "Relation.defaultCompareReducer", { precedence: ReductionManager.PRECEDENCE_LOW });
 };
