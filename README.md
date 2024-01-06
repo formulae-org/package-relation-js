@@ -15,3 +15,6 @@ Take a look at this [tutorial](https://formulae.org/?script=tutorials/Complex) t
 ### Capabilities ###
 
 * Visualization of [relational operators](https://en.wikipedia.org/wiki/Relational_operator) as $a = b$, $a \ne b$, $a > b$, $a < b$, $a \leq b$, $a \geq b$
+* Visualization of [three-way comparison](https://en.wikipedia.org/wiki/Three-way_comparison) through the **COMPARE TO** expression
+* Visualization and reduction of the [maximum and minimum](https://en.wikipedia.org/wiki/Maximum_and_minimum) expressions. Visualized as $\max\{ ... \}$ and $\min\{ ... \}$
+* Visualization and reduction of the [membership](https://en.wikipedia.org/wiki/Element_(mathematics)), visualized as $x \in \{ ... \}$ and $x \notin \{ ... \}$
