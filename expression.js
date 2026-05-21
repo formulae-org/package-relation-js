@@ -21,27 +21,51 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 export class Relation extends Formulae.Package {}
 
 Relation.setExpressions = function(module) {
-	[ "Equals", "Different", "Greater", "GreaterOrEquals", "Less", "LessOrEquals", "Compare", "In", "NotIn" ].forEach(tag => Formulae.setExpression(module, "Relation." + tag, {
-		clazz:       Expression.Infix,
-		getTag:      () => "Relation." + tag,
-		getOperator: () => Relation.messages["operator" + tag],
-		getName:     () => Relation.messages["name" + tag],
-		min: 2, max: 2
-	}));
+	[ "Equals", "Different", "Greater", "GreaterOrEquals", "Less", "LessOrEquals" ].forEach(tag => Formulae.setExpression(
+		module,
+		"Relation." + tag,
+		{
+			clazz:       Expression.Infix,
+			getTag:      () => "Relation." + tag,
+			getOperator: () => Relation.messages["operator" + tag],
+			getName:     () => Relation.messages["name" + tag],
+			parentheses: false,
+			min: 2, max: 2
+		})
+	);
 	
-	[ "Equals", "Less", "Greater", "Different" ].forEach(tag => Formulae.setExpression(module, "Relation.Comparison." + tag, {
-		//clazz:      Expression.Literal,
-		clazz:      Expression.LabelExpression,
-		getTag:     () => "Relation.Comparison." + tag,
-		//getLiteral: () => Relation.messages["literalComparison" + tag],
-		getLabel:   () => Relation.messages["literalComparison" + tag],
-		getName:    () => Relation.messages["nameComparison" + tag]
-	}));
+	[ "Compare", "In", "NotIn" ].forEach(tag => Formulae.setExpression(
+		module,
+		"Relation." + tag,
+		{
+			clazz:       Expression.Infix,
+			getTag:      () => "Relation." + tag,
+			getOperator: () => Relation.messages["operator" + tag],
+			getName:     () => Relation.messages["name" + tag],
+			min: 2, max: 2
+		})
+	);
 	
-	[ "Min", "Max" ].forEach(tag => Formulae.setExpression(module, "Relation." + tag, {
-		clazz:      Expression.PrefixedLiteral,
-		getTag:     () => "Relation." + tag,
-		getLiteral: () => Relation.messages["literal" + tag],
-		getName:    () => Relation.messages["name" + tag]
-	}));
+	[ "Equals", "Less", "Greater", "Different" ].forEach(tag => Formulae.setExpression(
+		module,
+		"Relation.Comparison." + tag,
+		{
+			clazz:    Expression.LabelExpression,
+			getTag:   () => "Relation.Comparison." + tag,
+			getLabel: () => Relation.messages["literalComparison" + tag],
+			getName:  () => Relation.messages["nameComparison" + tag]
+		})
+	);
+	
+	[ "Min", "Max" ].forEach(tag => Formulae.setExpression(
+		module,
+		"Relation." + tag,
+		{
+			clazz:      Expression.PrefixedLiteral,
+			getTag:     () => "Relation." + tag,
+			getLiteral: () => Relation.messages["literal" + tag],
+			getName:    () => Relation.messages["name" + tag]
+		})
+	);
 };
+
